@@ -1,0 +1,9 @@
+services:
+  swagger-editor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "${PORT}:8080"
+    network_mode: bridge
